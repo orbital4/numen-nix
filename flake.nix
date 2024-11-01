@@ -50,7 +50,7 @@
               cp -r . $out/usr/share/vosk-models/small-en-us
             '';
           };
-          dotoolPkg = pkgs.buildGo119Module rec {
+          dotoolPkg = pkgs.buildGo122Module rec {
             pname = "dotool";
             version = "1.3";
             vendorSha256 = "sha256-v0uoG9mNaemzhQAiG85RequGjkSllPd4UK2SrLjfm7A=";
@@ -59,7 +59,7 @@
             buildInputs = [ libxkbcommon ];
           };
       in
-        pkgs.buildGo119Module rec {
+        pkgs.buildGo122Module rec {
           pname = "numen";
           version = "0.7";
           vendorSha256 = "sha256-Y3CbAnIK+gEcUfll9IlEGZE/s3wxdhAmTJkj9zlAtoQ=";
