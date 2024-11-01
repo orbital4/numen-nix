@@ -1,6 +1,6 @@
 { numen-src
 , stdenv
-, buildGo119Module
+, buildGo122Module
 , makeWrapper
 , scdoc
 , dotool
@@ -16,7 +16,7 @@
 , dmenu
 , procps
 }:
-buildGo119Module rec {
+buildGo122Module rec {
   pname = "numen";
   version = "0.7";
   vendorSha256 = "sha256-Y3CbAnIK+gEcUfll9IlEGZE/s3wxdhAmTJkj9zlAtoQ=";
